@@ -39,27 +39,33 @@
   </style>
 </head>
 <body>
+<style>
+  .demo{
+    background: #ddd;
+    border: 1px solid red;
+    height: 50px;
+  }
+</style>
 <div id="app">
-  <g-row gutter="20">
-    <g-col span="24"
-           :narrow-pc="{span: 6}"
-           :pc="{span: 4}"
-           :wide-pc="{span: 2}"
-    >1</g-col>
-    <g-col span="24"
-           :narrow-pc="{span: 18}"
-           :pc="{span: 20}"
-           :wide-pc="{span: 22}"
-    >11</g-col>
-  </g-row>
-  <g-row gutter="20">
-    <g-col span="4">2</g-col>
-    <g-col span="20">10</g-col>
-  </g-row>
-  <g-row gutter="20">
-    <g-col span="2">1</g-col>
-    <g-col span="10" offset="6">5</g-col>
-    <g-col span="4" offset="2">2</g-col>
+  <g-row>
+    <g-col span="24" :narrow-pc="{span: 8}">
+      <div class="demo"></div>
+    </g-col>
+    <g-col span="24" :narrow-pc="{span: 8}">
+      <div class="demo"></div>
+    </g-col>
+    <g-col span="24" :narrow-pc="{span: 8}">
+      <div class="demo"></div>
+    </g-col>
+    <g-col span="24" :narrow-pc="{span: 8}">
+      <div class="demo"></div>
+    </g-col>
+    <g-col span="24" :narrow-pc="{span: 8}">
+      <div class="demo"></div>
+    </g-col>
+    <g-col span="24" :narrow-pc="{span: 8}">
+      <div class="demo"></div>
+    </g-col>
   </g-row>
 
   <hr>
