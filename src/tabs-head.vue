@@ -11,7 +11,6 @@
     name: 'GuluTabsHead',
     inject: ['eventBus'],
     created () {
-      console.log(this.eventBus);
     }
   }
 </script>
@@ -21,7 +20,6 @@
     height: $tabs-height;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     border: 1px solid red;
     > .actions-wrapper {
       margin-left: auto;
