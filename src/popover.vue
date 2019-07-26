@@ -136,26 +136,26 @@
     &.position-top {
       transform: translateY(-100%);
       margin-top: -10px;
-      &::before, &::after { left: 10px; }
+      &::before, &::after { left: 10px; border-bottom: none; }
       &::before { border-top-color: black; top: 100%; }
       &::after { border-top-color: white; top: calc(100% - 1px); }
     }
     &.position-bottom {
       margin-top: 10px;
-      &::before, &::after { left: 10px; }
+      &::before, &::after { left: 10px; border-top: none; }
       &::before { border-bottom-color: black; bottom: 100%; }
       &::after { border-bottom-color: white; bottom: calc(100% - 1px); }
     }
     &.position-left {
       transform: translateX(-100%);
       margin-left: -10px;
-      &::before, &::after { top: 50%; transform: translateY(-50%); }
+      &::before, &::after { top: 50%; border-right: none; transform: translateY(-50%); }
       &::before { border-left-color: black; left: 100%; }
       &::after { border-left-color: white; left: calc(100% - 1px); }
     }
     &.position-right {
       margin-left: 10px;
-      &::before, &::after { top: 50%; transform: translateY(-50%); }
+      &::before, &::after { top: 50%; border-left: none; transform: translateY(-50%); }
       &::before { border-right-color: black; right: 100%; }
       &::after { border-right-color: white; right: calc(100% - 1px); }
     }
