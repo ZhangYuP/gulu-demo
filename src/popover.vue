@@ -1,5 +1,5 @@
 <template>
-  <div class="popover" @click="onClick">
+  <div class="popover" ref="popover">
     <div class="content-wrapper" ref="contentWrapper" v-if="visible"
     :class="{[`position-${position}`]: true}">
       <slot name="content"></slot>
@@ -18,6 +18,22 @@
         visible: false
       }
     },
+    mounted (){
+      if (this.trigger === 'click') {
+        this.$refs.popover.addEventListener('click', this.onClick)
+      } else {
+        this.$refs.popover.addEventListener('mouseenter', this.open)
+        this.$refs.popover.addEventListener('mouseleave', this.close)
+      }
+    },
+    destroyed(){
+      if (this.trigger === 'click') {
+        this.$refs.popover.removeEventListener('click', this.onClick)
+      } else {
+        this.$refs.popover.removeEventListener('mouseenter', this.open)
+        this.$refs.popover.removeEventListener('mouseleave', this.close)
+      }
+    },
     props: {
       position: {
         type: String,
@@ -25,10 +41,14 @@
         validator (value) {
           return ['top', 'bottom', 'left', 'right'].indexOf(value) >= 0
         }
+      },
+      trigger: {
+        type: String,
+        default: 'click',
+        validator (value) {
+          return ['click', 'hover'].indexOf(value) >= 0
+        }
       }
-    },
-    mounted () {
-
     },
     methods: {
       positionContent(){
@@ -58,17 +78,17 @@
         contentWrapper.style.left = positions[this.position].left + 'px'
       },
       onClickDocument(e){
-        if (this.$refs.contentWrapper.contains(e.target)) {
+        if (this.$refs.popover.contains(e.target) || this.$refs.contentWrapper.contains(e.target)) {
           return
         }
         this.close()
       },
       open(){
         this.visible = true
-        setTimeout(() => {
+        this.$nextTick(() => {
           this.positionContent()
           document.addEventListener('click', this.onClickDocument)
-        }, 0)
+        })
       },
       close(){
         this.visible = false
