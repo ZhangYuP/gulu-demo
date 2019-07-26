@@ -34,22 +34,28 @@
       positionContent(){
         const {contentWrapper, triggerWrapper} = this.$refs
         document.body.appendChild(contentWrapper)
-        let {width, height, top, left} = triggerWrapper.getBoundingClientRect()
-        if (this.position === 'top') {
-          contentWrapper.style.left = window.scrollX + left + 'px'
-          contentWrapper.style.top = window.scrollY + top + 'px'
-        } else if (this.position === 'bottom') {
-          contentWrapper.style.left = window.scrollX + left + 'px'
-          contentWrapper.style.top = window.scrollY + top + height + 'px'
-        } else if (this.position === 'left') {
-          contentWrapper.style.left = window.scrollX + left + 'px'
-          let {height: height2} = contentWrapper.getBoundingClientRect()
-          contentWrapper.style.top = window.scrollY + top + (height - height2) / 2 + 'px'
-        } else if (this.position === 'right') {
-          contentWrapper.style.left = window.scrollX + left + width + 'px'
-          let {height: height2} = contentWrapper.getBoundingClientRect()
-          contentWrapper.style.top = window.scrollY + top + (height - height2) / 2 + 'px'
+        const {width, height, top, left} = triggerWrapper.getBoundingClientRect()
+        const {height: height2} = contentWrapper.getBoundingClientRect()
+        let positions = {
+          top: {
+            top: window.scrollY + top,
+            left: window.scrollX + left
+          },
+          bottom: {
+            top: window.scrollY + top + height,
+            left: window.scrollX + left
+          },
+          left: {
+            top: window.scrollY + top + (height - height2) / 2,
+            left: window.scrollX + left
+          },
+          right: {
+            top: window.scrollY + top + (height - height2) / 2,
+            left: window.scrollX + left + width
+          }
         }
+        contentWrapper.style.top = positions[this.position].top + 'px'
+        contentWrapper.style.left = positions[this.position].left + 'px'
       },
       onClickDocument(e){
         if (this.$refs.contentWrapper.contains(e.target)) {
