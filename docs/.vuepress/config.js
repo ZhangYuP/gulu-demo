@@ -1,6 +1,6 @@
 module.exports = {
   base: '/zyp-gulu-demo/',
-  title: '轱辘 UI',
+  title: '咕噜 UI',
   description: '一个好用的 UI 框架',
   themeConfig: {
     sidebar: [

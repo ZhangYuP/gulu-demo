@@ -1,5 +1,5 @@
 <template>
-  <div class="tabs-head">
+  <div class="tabs-head" id="tabs-head">
     <slot></slot>
     <div class="line" ref="line"></div>
     <div class="actions-wrapper">
@@ -8,14 +8,18 @@
   </div>
 </template>
 <script>
+  import tabs from "./tabs";
+
   export default {
     name: 'GuluTabsHead',
     inject: ['eventBus'],
     mounted () {
       this.eventBus.$on('update:selected', (item, vm) => {
+        let tabsHead = document.getElementById('tabs-head')
+        let tabsHeadLeft = tabsHead.getBoundingClientRect().left
         let {width, height, top, left} = vm.$el.getBoundingClientRect()
         this.$refs.line.style.width = `${width}px`
-        this.$refs.line.style.left = `${left}px`
+        this.$refs.line.style.left = `${left - tabsHeadLeft}px`
       })
     }
   }
@@ -32,8 +36,8 @@
     border-bottom: 1px solid $border-color;
     > .line {
       position: absolute;
-      bottom: 0;
-      border-bottom: 1px solid $blue;
+      bottom: -1px;
+      border-bottom: 2px solid $blue;
       transition: all 350ms;
     }
     > .actions-wrapper {

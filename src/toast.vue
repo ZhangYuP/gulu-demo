@@ -5,7 +5,7 @@
         <slot v-if="!enableHtml"></slot>
         <div v-else v-html="$slots.default[0]"></div>
       </div>
-      <div class="line" ref="line"></div>
+      <div class="line" v-if="closeButton" ref="line"></div>
       <span class="close" v-if="closeButton" @click="onClickClose">
         {{closeButton.text}}
       </span>
@@ -58,7 +58,7 @@
     methods: {
       updateStyles () {
         this.$nextTick(() => {
-          this.$refs.line.style.height = `${this.$refs.toast.getBoundingClientRect().height}px`
+          if (this.$refs.line) this.$refs.line.style.height = `${this.$refs.toast.getBoundingClientRect().height}px`
         })
       },
       execAutoClose () {
@@ -127,7 +127,7 @@
 
   }
   .toast {
-    font-style: $font-size;
+    font-size: $font-size;
     line-height: 1.8;
     min-height: $toast-min-height;
     color: white;
