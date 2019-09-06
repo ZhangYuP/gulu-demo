@@ -20,7 +20,8 @@ module.exports = {
           '/components/layout',
           '/components/toast',
           '/components/popover',
-          '/components/tabs'
+          '/components/tabs',
+          '/components/collapse'
         ]
       }
     ]
