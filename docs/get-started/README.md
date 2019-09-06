@@ -18,7 +18,8 @@ IE 8 及以上浏览器都支持此样式。
 参考 [安装](http://localhost:8080/roc-ui/install/) 章节
 
 ## 引入 roc-ui
-```$xslt
+
+```
 import {Button, ButtonGroup, Icon} from 'roc-ui-1'
 import 'roc-ui-1/dist/index.css'
 
