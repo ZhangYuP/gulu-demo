@@ -11,7 +11,7 @@
   import tabs from "./tabs";
 
   export default {
-    name: 'GuluTabsHead',
+    name: 'RocTabsHead',
     inject: ['eventBus'],
     mounted () {
       this.eventBus.$on('update:selected', (item, vm) => {

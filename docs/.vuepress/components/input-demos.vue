@@ -1,9 +1,9 @@
 <template>
   <div>
-    <g-input value="文本" />
-    <g-input value="文本" disabled />
-    <g-input value="文本" readonly />
-    <g-input value="文本" error="输入错误"/>
+    <r-input value="文本" />
+    <r-input value="文本" disabled />
+    <r-input value="文本" readonly />
+    <r-input value="文本" error="输入错误"/>
   </div>
 </template>
 
@@ -12,7 +12,7 @@
 
   export default {
     components: {
-      'g-input': Input
+      'r-input': Input
     }
   }
 </script>

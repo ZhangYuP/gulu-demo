@@ -18,20 +18,20 @@
 IE 8 及以上浏览器都支持此样式。
 
 2. 安装 roc-ui
-```$xslt
-npm i --save zyp-gulu
+```
+npm install --save roc-ui-1
 ```
 3. 引入 roc-ui
-```$xslt
-import {Button, ButtonGroup, Icon} from 'zyp-gulu'
-import 'zyp-gulu/dist/index.css'
+```
+import {Button, ButtonGroup, Icon} from 'roc-ui-1'
+import 'roc-ui-1/dist/index.css'
 
 export default {
   name: 'app',
   components: {
-    'g-button': Button,
-    'g-button-group': ButtonGroup,
-    'g-icon': Icon
+    'r-button': Button,
+    'r-button-group': ButtonGroup,
+    'r-icon': Icon
   }
 }
 ```

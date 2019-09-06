@@ -1,13 +1,13 @@
 <template>
   <div>
-    <g-layout style="overflow: hidden;">
-      <g-header style="height: 50px; background: #8cc5ff;">header</g-header>
-      <g-layout>
-        <g-sider style="height: 150px; width: 200px; background: #c6e2ff;">sider</g-sider>
-        <g-content style="height: 150px; background: #409EFF;">content</g-content>
-      </g-layout>
-      <g-footer style="height: 50px; background: #8cc5ff;">footer</g-footer>
-    </g-layout>
+    <r-layout style="overflow: hidden;">
+      <r-header style="height: 50px; background: #8cc5ff;">header</r-header>
+      <r-layout>
+        <r-sider style="height: 150px; width: 200px; background: #c6e2ff;">sider</r-sider>
+        <r-content style="height: 150px; background: #409EFF;">content</r-content>
+      </r-layout>
+      <r-footer style="height: 50px; background: #8cc5ff;">footer</r-footer>
+    </r-layout>
   </div>
 </template>
 
@@ -20,11 +20,11 @@
 
   export default {
     components: {
-      'g-layout': Layout,
-      'g-header': Header,
-      'g-content': Content,
-      'g-footer': Footer,
-      'g-sider': Sider,
+      'r-layout': Layout,
+      'r-header': Header,
+      'r-content': Content,
+      'r-footer': Footer,
+      'r-sider': Sider,
     }
   }
 </script>

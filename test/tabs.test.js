@@ -5,11 +5,11 @@ import TabsHead from '../src/tabs-head'
 import TabsItem from '../src/tabs-item'
 import TabsBody from '../src/tabs-body'
 import TabsPane from '../src/tabs-pane'
-Vue.component('g-tabs', Tabs);
-Vue.component('g-tabs-head', TabsHead);
-Vue.component('g-tabs-item', TabsItem);
-Vue.component('g-tabs-body', TabsBody);
-Vue.component('g-tabs-pane', TabsPane);
+Vue.component('r-tabs', Tabs);
+Vue.component('r-tabs-head', TabsHead);
+Vue.component('r-tabs-item', TabsItem);
+Vue.component('r-tabs-body', TabsBody);
+Vue.component('r-tabs-pane', TabsPane);
 
 Vue.config.productionTip = false
 Vue.config.devtools = false
@@ -25,18 +25,18 @@ describe('Tabs', () => {
     const div = document.createElement('div')
     document.body.appendChild(div)
     div.innerHTML = `
-      <g-tabs selected="finance">
-        <g-tabs-head>
-          <g-tabs-item name="woman"> 美女 </g-tabs-item>
-          <g-tabs-item name="finance" > 财经 </g-tabs-item>
-          <g-tabs-item name="sports"> 体育 </g-tabs-item>
-        </g-tabs-head>
-        <g-tabs-body>
-          <g-tabs-pane name="woman"> 美女相关资讯 </g-tabs-pane>
-          <g-tabs-pane name="finance"> 财经相关资讯 </g-tabs-pane>
-          <g-tabs-pane name="sports"> 体育相关资讯 </g-tabs-pane>
-        </g-tabs-body>
-      </g-tabs>
+      <r-tabs selected="finance">
+        <r-tabs-head>
+          <r-tabs-item name="woman"> 美女 </r-tabs-item>
+          <r-tabs-item name="finance" > 财经 </r-tabs-item>
+          <r-tabs-item name="sports"> 体育 </r-tabs-item>
+        </r-tabs-head>
+        <r-tabs-body>
+          <r-tabs-pane name="woman"> 美女相关资讯 </r-tabs-pane>
+          <r-tabs-pane name="finance"> 财经相关资讯 </r-tabs-pane>
+          <r-tabs-pane name="sports"> 体育相关资讯 </r-tabs-pane>
+        </r-tabs-body>
+      </r-tabs>
     `
     const vm = new Vue({
       el: div

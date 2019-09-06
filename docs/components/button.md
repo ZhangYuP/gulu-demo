@@ -15,12 +15,12 @@ title: Button
 **代码**
 
 ```html
-<g-button>默认按钮</g-button>
-<g-button icon="settings">设置</g-button>
-<g-button icon="thumbs-up">点赞</g-button>
-<g-button icon="download" icon-position="right">下载</g-button>
-<g-button :loading="true">加载中</g-button>
-<g-button disabled>默认按钮</g-button>
+<r-button>默认按钮</r-button>
+<r-button icon="settings">设置</r-button>
+<r-button icon="thumbs-up">点赞</r-button>
+<r-button icon="download" icon-position="right">下载</r-button>
+<r-button :loading="true">加载中</r-button>
+<r-button disabled>默认按钮</r-button>
 ```
 
 ## 组合按钮
@@ -34,8 +34,8 @@ title: Button
 **代码**
 
 ```html
-<g-button-group>
-  <g-button icon="left">上一页</g-button>
-  <g-button icon="right" icon-position="right">下一页</g-button>
-</g-button-group>
+<r-button-group>
+  <r-button icon="left">上一页</r-button>
+  <r-button icon="right" icon-position="right">下一页</r-button>
+</r-button-group>
 ```

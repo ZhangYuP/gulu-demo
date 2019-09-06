@@ -1,6 +1,6 @@
 # 鹏 UI 官网
 
-[![Build Status](https://www.travis-ci.org/ZhangYuP/roc-ui.svg?branch=master)](https://www.travis-ci.org/ZhangYuP/zyp-gulu-demo)
+[![Build Status](https://www.travis-ci.org/ZhangYuP/roc-ui.svg?branch=master)](https://www.travis-ci.org/ZhangYuP/roc-ui)
 
 鹏 UI 是一个好用的 UI 框架，提供了按钮、输入框、网格、布局、Toast、Tabs、Popover、手风琴等常用组件，适合移动端和 PC 端使用。
 

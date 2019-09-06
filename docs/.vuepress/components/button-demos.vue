@@ -1,11 +1,11 @@
 <template>
   <div>
-    <g-button>默认按钮</g-button>
-    <g-button icon="settings">设置</g-button>
-    <g-button icon="thumbs-up">点赞</g-button>
-    <g-button icon="download" icon-position="right">下载</g-button>
-    <g-button :loading="true">加载中</g-button>
-    <g-button disabled>默认按钮</g-button>
+    <r-button>默认按钮</r-button>
+    <r-button icon="settings">设置</r-button>
+    <r-button icon="thumbs-up">点赞</r-button>
+    <r-button icon="download" icon-position="right">下载</r-button>
+    <r-button :loading="true">加载中</r-button>
+    <r-button disabled>默认按钮</r-button>
   </div>
 </template>
 
@@ -14,7 +14,7 @@
 
   export default {
     components: {
-      'g-button': Button
+      'r-button': Button
     }
   }
 </script>

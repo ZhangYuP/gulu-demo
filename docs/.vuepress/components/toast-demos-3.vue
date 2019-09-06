@@ -1,6 +1,6 @@
 <template>
   <div>
-    <g-button @click="showToast">默认顶部弹出</g-button>
+    <r-button @click="showToast">默认顶部弹出</r-button>
   </div>
 </template>
 
@@ -14,8 +14,8 @@
 
   export default {
     components: {
-      'g-toast': Toast,
-      'g-button': Button
+      'r-toast': Toast,
+      'r-button': Button
     },
     methods: {
       showToast(position){

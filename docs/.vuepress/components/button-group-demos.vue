@@ -1,9 +1,9 @@
 <template>
   <div>
-    <g-button-group>
-      <g-button icon="left">上一页</g-button>
-      <g-button icon="right" icon-position="right">下一页</g-button>
-    </g-button-group>
+    <r-button-group>
+      <r-button icon="left">上一页</r-button>
+      <r-button icon="right" icon-position="right">下一页</r-button>
+    </r-button-group>
   </div>
 </template>
 
@@ -13,8 +13,8 @@
 
   export default {
     components: {
-      'g-button': Button,
-      'g-button-group': ButtonGroup
+      'r-button': Button,
+      'r-button-group': ButtonGroup
     }
   }
 </script>

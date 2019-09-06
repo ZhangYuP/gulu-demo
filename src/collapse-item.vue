@@ -11,7 +11,7 @@
 
 <script>
   export default {
-    name: "GuluCollapseItem",
+    name: "RocCollapseItem",
     props: {
       title: {
         type: String,

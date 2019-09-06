@@ -14,11 +14,11 @@ title: Collapse
 
 **代码**
 ```html
-<g-collapse :selected.sync="selectedTab">
-  <g-collapse-item name="1" title="标题1">内容1</g-collapse-item>
-  <g-collapse-item name="2" title="标题2">内容2</g-collapse-item>
-  <g-collapse-item name="3" title="标题3">内容3</g-collapse-item>
-</g-collapse>
+<r-collapse :selected.sync="selectedTab">
+  <r-collapse-item name="1" title="标题1">内容1</r-collapse-item>
+  <r-collapse-item name="2" title="标题2">内容2</r-collapse-item>
+  <r-collapse-item name="3" title="标题3">内容3</r-collapse-item>
+</r-collapse>
 ```
 ```javascript
 data(){
@@ -38,11 +38,11 @@ data(){
 
 **代码**
 ```html
-<g-collapse :selected.sync="selectedTab" single>
-  <g-collapse-item name="1" title="标题1">内容1</g-collapse-item>
-  <g-collapse-item name="2" title="标题2">内容2</g-collapse-item>
-  <g-collapse-item name="3" title="标题3">内容3</g-collapse-item>
-</g-collapse>
+<r-collapse :selected.sync="selectedTab" single>
+  <r-collapse-item name="1" title="标题1">内容1</r-collapse-item>
+  <r-collapse-item name="2" title="标题2">内容2</r-collapse-item>
+  <r-collapse-item name="3" title="标题3">内容3</r-collapse-item>
+</r-collapse>
 ```
 ```javascript
 data(){

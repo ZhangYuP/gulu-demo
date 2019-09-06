@@ -1,9 +1,9 @@
 <template>
-  <button class="g-button" :class="{[`icon-${iconPosition}`]: true}"
+  <button class="r-button" :class="{[`icon-${iconPosition}`]: true}"
     @click="$emit('click')">
-    <g-icon class="icon" v-if="icon && !loading" :name="icon"></g-icon>
-    <g-icon class="loading icon" v-if="loading" name="loading"></g-icon>
-    <div class="g-button-content">
+    <r-icon class="icon" v-if="icon && !loading" :name="icon"></r-icon>
+    <r-icon class="loading icon" v-if="loading" name="loading"></r-icon>
+    <div class="r-button-content">
       <slot></slot>
     </div>
   </button>
@@ -11,9 +11,9 @@
 <script>
   import Icon from './icon'
   export default {
-    name: 'GuluButton',
+    name: 'RocButton',
     components: {
-      'g-icon': Icon
+      'r-icon': Icon
     },
     props: {
       icon: {},
@@ -44,7 +44,7 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
-  .g-button {
+  .r-button {
     font-size: $font-size;
     height: $button-height;
     padding: 0 1.1em;
@@ -68,7 +68,7 @@
       order: 1;
       margin-right: 0.25em;
     }
-    > .g-button-content {
+    > .r-button-content {
       order: 2;
     }
     &.icon-right {
@@ -77,7 +77,7 @@
         margin-left: 0.25em;
         margin-right: 0;
       }
-      > .g-button-content {
+      > .r-button-content {
         order: 1;
       }
     }

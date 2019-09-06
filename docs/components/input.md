@@ -14,7 +14,7 @@ title: Input
 
 **代码**
 ```html
-<g-input v-model="value" />
+<r-input v-model="value" />
 <div>{{value}}</div>
 ```
 
@@ -28,7 +28,7 @@ title: Input
 
 **代码**
 ```html
-<g-input v-model="value" />
+<r-input v-model="value" />
 <span>{{value}}</span>
 ```
 ```javascript

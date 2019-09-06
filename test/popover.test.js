@@ -12,16 +12,16 @@ describe('Popover', () => {
     expect(Popover).to.exist
   })
   it('可以设置position.', (done) => {
-    Vue.component('g-popover', Popover)
+    Vue.component('r-popover', Popover)
     const div = document.createElement('div')
     document.body.appendChild(div)
     div.innerHTML = `
-      <g-popover position="bottom" ref="a">
+      <r-popover position="bottom" ref="a">
         <template slot="content">
           弹出内容
         </template>
         <button>点我</button>
-      </g-popover>
+      </r-popover>
     `
     const vm = new Vue({
       el: div
@@ -34,16 +34,16 @@ describe('Popover', () => {
     })
   })
   xit('可以设置trigger.', (done) => {
-    Vue.component('g-popover', Popover)
+    Vue.component('r-popover', Popover)
     const div = document.createElement('div')
     document.body.appendChild(div)
     div.innerHTML = `
-      <g-popover trigger="hover" ref="a">
+      <r-popover trigger="hover" ref="a">
         <template slot="content">
           弹出内容
         </template>
         <button>点我</button>
-      </g-popover>
+      </r-popover>
     `
     const vm = new Vue({
       el: div

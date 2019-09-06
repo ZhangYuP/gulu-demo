@@ -5,7 +5,7 @@
 </template>
 <script>
   export default {
-    name: 'GuluTabsItem',
+    name: 'RocTabsItem',
     inject: ['eventBus'],
     data () {
       return {

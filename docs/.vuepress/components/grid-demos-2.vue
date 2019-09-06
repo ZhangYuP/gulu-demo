@@ -1,24 +1,24 @@
 <template>
   <div>
-    <g-row gutter="10">
-      <g-col span="8"><div class="content">8</div></g-col>
-      <g-col span="8"><div class="content">8</div></g-col>
-      <g-col span="8"><div class="content">8</div></g-col>
-    </g-row>
-    <g-row gutter="10">
-      <g-col span="6"><div class="content">6</div></g-col>
-      <g-col span="6"><div class="content">6</div></g-col>
-      <g-col span="6"><div class="content">6</div></g-col>
-      <g-col span="6"><div class="content">6</div></g-col>
-    </g-row>
-    <g-row gutter="10">
-      <g-col span="4"><div class="content">4</div></g-col>
-      <g-col span="4"><div class="content">4</div></g-col>
-      <g-col span="4"><div class="content">4</div></g-col>
-      <g-col span="4"><div class="content">4</div></g-col>
-      <g-col span="4"><div class="content">4</div></g-col>
-      <g-col span="4"><div class="content">4</div></g-col>
-    </g-row>
+    <r-row gutter="10">
+      <r-col span="8"><div class="content">8</div></r-col>
+      <r-col span="8"><div class="content">8</div></r-col>
+      <r-col span="8"><div class="content">8</div></r-col>
+    </r-row>
+    <r-row gutter="10">
+      <r-col span="6"><div class="content">6</div></r-col>
+      <r-col span="6"><div class="content">6</div></r-col>
+      <r-col span="6"><div class="content">6</div></r-col>
+      <r-col span="6"><div class="content">6</div></r-col>
+    </r-row>
+    <r-row gutter="10">
+      <r-col span="4"><div class="content">4</div></r-col>
+      <r-col span="4"><div class="content">4</div></r-col>
+      <r-col span="4"><div class="content">4</div></r-col>
+      <r-col span="4"><div class="content">4</div></r-col>
+      <r-col span="4"><div class="content">4</div></r-col>
+      <r-col span="4"><div class="content">4</div></r-col>
+    </r-row>
   </div>
 </template>
 
@@ -28,8 +28,8 @@
 
   export default {
     components: {
-      'g-col': Col,
-      'g-row': Row
+      'r-col': Col,
+      'r-row': Row
     }
   }
 </script>

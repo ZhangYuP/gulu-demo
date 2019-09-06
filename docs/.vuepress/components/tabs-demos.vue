@@ -1,17 +1,17 @@
 <template>
   <div>
-    <g-tabs selected="1">
-      <g-tabs-head>
-        <g-tabs-item name="1">标签1</g-tabs-item>
-        <g-tabs-item name="2">标签2</g-tabs-item>
-        <g-tabs-item name="3" disabled>标签3</g-tabs-item>
-      </g-tabs-head>
-      <g-tabs-body>
-        <g-tabs-pane name="1">内容1</g-tabs-pane>
-        <g-tabs-pane name="2">内容2</g-tabs-pane>
-        <g-tabs-pane name="3">内容3</g-tabs-pane>
-      </g-tabs-body>
-    </g-tabs>
+    <r-tabs selected="1">
+      <r-tabs-head>
+        <r-tabs-item name="1">标签1</r-tabs-item>
+        <r-tabs-item name="2">标签2</r-tabs-item>
+        <r-tabs-item name="3" disabled>标签3</r-tabs-item>
+      </r-tabs-head>
+      <r-tabs-body>
+        <r-tabs-pane name="1">内容1</r-tabs-pane>
+        <r-tabs-pane name="2">内容2</r-tabs-pane>
+        <r-tabs-pane name="3">内容3</r-tabs-pane>
+      </r-tabs-body>
+    </r-tabs>
   </div>
 </template>
 
@@ -24,11 +24,11 @@
 
   export default {
     components: {
-      'g-tabs': Tabs,
-      'g-tabs-head': TabsHead,
-      'g-tabs-body': TabsBody,
-      'g-tabs-item': TabsItem,
-      'g-tabs-pane': TabsPane,
+      'r-tabs': Tabs,
+      'r-tabs-head': TabsHead,
+      'r-tabs-body': TabsBody,
+      'r-tabs-item': TabsItem,
+      'r-tabs-pane': TabsPane,
     }
   }
 </script>

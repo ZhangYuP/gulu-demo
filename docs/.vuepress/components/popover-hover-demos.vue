@@ -1,29 +1,29 @@
 <template>
   <div>
-    <g-popover position="top" trigger="hover">
+    <r-popover position="top" trigger="hover">
       <template slot="content">
         <div>弹出文本</div>
       </template>
-      <g-button>上方弹出</g-button>
-    </g-popover>
-    <g-popover position="bottom" trigger="hover">
+      <r-button>上方弹出</r-button>
+    </r-popover>
+    <r-popover position="bottom" trigger="hover">
       <template slot="content">
         <div>弹出文本</div>
       </template>
-      <g-button>下方弹出</g-button>
-    </g-popover>
-    <g-popover position="left" trigger="hover">
+      <r-button>下方弹出</r-button>
+    </r-popover>
+    <r-popover position="left" trigger="hover">
       <template slot="content">
         <div>弹出文本</div>
       </template>
-      <g-button>左侧弹出</g-button>
-    </g-popover>
-    <g-popover position="right" trigger="hover">
+      <r-button>左侧弹出</r-button>
+    </r-popover>
+    <r-popover position="right" trigger="hover">
       <template slot="content">
         <div>弹出文本</div>
       </template>
-      <g-button>右侧弹出</g-button>
-    </g-popover>
+      <r-button>右侧弹出</r-button>
+    </r-popover>
   </div>
 </template>
 
@@ -34,8 +34,8 @@
 
   export default {
     components: {
-      'g-popover': Popover,
-      'g-button': Button
+      'r-popover': Popover,
+      'r-button': Button
     }
   }
 </script>

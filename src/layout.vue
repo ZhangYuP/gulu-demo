@@ -5,7 +5,7 @@
 </template>
 <script>
   export default {
-    name: 'GuluLayout',
+    name: 'RocLayout',
     data () {
       return {
         layoutClass: {
@@ -15,7 +15,7 @@
     },
     mounted () {
       this.$children.forEach(vm => {
-        if (vm.$options.name === 'GuluSider') {
+        if (vm.$options.name === 'RocSider') {
           this.layoutClass.hasSider = true
         }
       })

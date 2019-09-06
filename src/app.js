@@ -21,27 +21,27 @@ import Popover from './popover'
 import Collapse from './collapse'
 import CollapseItem from './collapse-item'
 
-Vue.component('g-button', Button);
-Vue.component('g-icon', Icon);
-Vue.component('g-button-group', ButtonGroup);
-Vue.component('g-input', Input);
-Vue.component('g-row', Row);
-Vue.component('g-col', Col);
-Vue.component('g-layout', Layout);
-Vue.component('g-header', Header);
-Vue.component('g-sider', Sider);
-Vue.component('g-content', Content);
-Vue.component('g-footer', Footer);
-Vue.component('g-toast', Toast);
+Vue.component('r-button', Button);
+Vue.component('r-icon', Icon);
+Vue.component('r-button-group', ButtonGroup);
+Vue.component('r-input', Input);
+Vue.component('r-row', Row);
+Vue.component('r-col', Col);
+Vue.component('r-layout', Layout);
+Vue.component('r-header', Header);
+Vue.component('r-sider', Sider);
+Vue.component('r-content', Content);
+Vue.component('r-footer', Footer);
+Vue.component('r-toast', Toast);
 Vue.use(plugin)
-Vue.component('g-tabs', Tabs);
-Vue.component('g-tabs-head', TabsHead);
-Vue.component('g-tabs-item', TabsItem);
-Vue.component('g-tabs-body', TabsBody);
-Vue.component('g-tabs-pane', TabsPane);
-Vue.component('g-popover', Popover);
-Vue.component('g-collapse', Collapse);
-Vue.component('g-collapse-item', CollapseItem);
+Vue.component('r-tabs', Tabs);
+Vue.component('r-tabs-head', TabsHead);
+Vue.component('r-tabs-item', TabsItem);
+Vue.component('r-tabs-body', TabsBody);
+Vue.component('r-tabs-pane', TabsPane);
+Vue.component('r-popover', Popover);
+Vue.component('r-collapse', Collapse);
+Vue.component('r-collapse-item', CollapseItem);
 
 new Vue({
   el: '#app',

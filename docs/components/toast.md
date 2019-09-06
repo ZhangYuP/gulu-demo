@@ -14,9 +14,9 @@ title: Toast
 
 **代码**
 ```html
-<g-button @click="showToast('top')">顶部弹出</g-button>
-<g-button @click="showToast('middle')">中间弹出</g-button>
-<g-button @click="showToast('bottom')">底部弹出</g-button>
+<r-button @click="showToast('top')">顶部弹出</r-button>
+<r-button @click="showToast('middle')">中间弹出</r-button>
+<r-button @click="showToast('bottom')">底部弹出</r-button>
 ```
 ```javascript
 methods: {
@@ -40,7 +40,7 @@ methods: {
 
 **代码**
 ```html
-<g-button @click="showToast">默认顶部弹出</g-button>
+<r-button @click="showToast">默认顶部弹出</r-button>
 ```
 ```javascript
 methods: {
@@ -67,7 +67,7 @@ methods: {
 
 **代码**
 ```html
-<g-button @click="showToast">默认顶部弹出</g-button>
+<r-button @click="showToast">默认顶部弹出</r-button>
 ```
 ```javascript
 methods: {

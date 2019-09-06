@@ -16,7 +16,7 @@
   import Icon from './icon'
   export default {
     components: {Icon},
-    name: 'GuluInput',
+    name: 'RocInput',
     props: {
       value: {
         type: String

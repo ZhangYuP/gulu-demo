@@ -5,12 +5,12 @@
 </template>
 <script>
   export default {
-    name: 'GuluTabsBody',
+    name: 'RocTabsBody',
     inject: ['eventBus'],
   }
 </script>
 <style>
   .tabs-body {
-    
+
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <g-input v-model="value" />
+    <r-input v-model="value" />
     <span>{{value}}</span>
   </div>
 </template>
@@ -10,7 +10,7 @@
 
   export default {
     components: {
-      'g-input': Input
+      'r-input': Input
     },
     data(){
       return {

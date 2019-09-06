@@ -15,19 +15,19 @@ IE 8 及以上浏览器都支持此样式。
 
 ## 安装
 
-参考 [安装](http://localhost:8080/zyp-gulu-demo/install/) 章节
+参考 [安装](http://localhost:8080/roc-ui/install/) 章节
 
-## 引入 gulu
+## 引入 roc-ui
 ```$xslt
-import {Button, ButtonGroup, Icon} from 'zyp-gulu'
-import 'zyp-gulu/dist/index.css'
+import {Button, ButtonGroup, Icon} from 'roc-ui-1'
+import 'roc-ui-1/dist/index.css'
 
 export default {
   name: 'app',
   components: {
-    'g-button': Button,
-    'g-button-group': ButtonGroup,
-    'g-icon': Icon
+    'r-button': Button,
+    'r-button-group': ButtonGroup,
+    'r-icon': Icon
   }
 }
 ```
