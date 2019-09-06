@@ -1,6 +1,6 @@
-## 轱辘 一个 Vue UI 组件
+## 鹏 —— 一个 Vue UI 组件
 
-[![Build Status](https://www.travis-ci.org/ZhangYuP/zyp-gulu-demo.svg?branch=master)](https://www.travis-ci.org/ZhangYuP/zyp-gulu-demo)
+[![Build Status](https://www.travis-ci.org/ZhangYuP/roc-ui.svg?branch=master)](https://www.travis-ci.org/ZhangYuP/roc-ui)
 
 ## 介绍
 
@@ -17,11 +17,11 @@
 ```
 IE 8 及以上浏览器都支持此样式。
 
-2. 安装 zyp-gulu
+2. 安装 roc-ui
 ```$xslt
 npm i --save zyp-gulu
 ```
-3. 引入 gulu
+3. 引入 roc-ui
 ```$xslt
 import {Button, ButtonGroup, Icon} from 'zyp-gulu'
 import 'zyp-gulu/dist/index.css'
@@ -38,11 +38,11 @@ export default {
 
 ## 文档
 
-[官方文档](https://github.com/ZhangYuP/zyp-gulu-demo)
+[官方文档](https://github.com/ZhangYuP/roc-ui)
 
 ## 提问
 
-[issues](https://github.com/ZhangYuP/zyp-gulu-demo/issues)
+[issues](https://github.com/ZhangYuP/roc-ui/issues)
 
 ## 联系方式
 
@@ -50,4 +50,4 @@ export default {
 
 ## 贡献代码
 
-[Pull requests](https://github.com/ZhangYuP/zyp-gulu-demo/pulls)
+[Pull requests](https://github.com/ZhangYuP/roc-ui/pulls)

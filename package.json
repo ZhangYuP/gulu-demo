@@ -1,6 +1,6 @@
 {
-  "name": "zyp-gulu",
-  "version": "0.0.3",
+  "name": "roc",
+  "version": "0.1.0",
   "description": "这是一个UI框架",
   "main": "dist/index.js",
   "scripts": {
