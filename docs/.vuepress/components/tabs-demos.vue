@@ -1,6 +1,6 @@
 <template>
   <div>
-    <g-tabs :selected="selected">
+    <g-tabs selected="1">
       <g-tabs-head>
         <g-tabs-item name="1">标签1</g-tabs-item>
         <g-tabs-item name="2">标签2</g-tabs-item>
@@ -29,11 +29,6 @@
       'g-tabs-body': TabsBody,
       'g-tabs-item': TabsItem,
       'g-tabs-pane': TabsPane,
-    },
-    data(){
-      return {
-        selected: '1'
-      }
     }
   }
 </script>

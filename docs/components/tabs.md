@@ -12,7 +12,7 @@ title: Tabs
 
 **代码**
 ```html
-<g-tabs :selected="selected">
+<g-tabs selected="1">
   <g-tabs-head>
     <g-tabs-item name="1">标签1</g-tabs-item>
     <g-tabs-item name="2">标签2</g-tabs-item>
@@ -24,11 +24,4 @@ title: Tabs
     <g-tabs-pane name="3">内容3</g-tabs-pane>
   </g-tabs-body>
 </g-tabs>
-```
-```javascript
-data(){
-  return {
-    selected: '1'
-  }
-}
 ```
