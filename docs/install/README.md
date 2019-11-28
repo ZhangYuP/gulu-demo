@@ -4,11 +4,11 @@ title: 安装
 
 # 安装
 
-```$xslt
+```
 npm install --save roc-ui-1
 ```
 或者
-```$xslt
+```
 yarn add roc-ui-1 
 ```
 
