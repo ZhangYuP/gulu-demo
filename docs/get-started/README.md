@@ -20,15 +20,13 @@ IE 8 及以上浏览器都支持此样式。
 ## 引入 roc-ui
 
 ```
-import {Button, ButtonGroup, Icon} from 'roc-ui-1'
+import { Button } from 'roc-ui-1'
 import 'roc-ui-1/dist/index.css'
 
 export default {
   name: 'app',
   components: {
-    'r-button': Button,
-    'r-button-group': ButtonGroup,
-    'r-icon': Icon
+    'r-button': Button
   }
 }
 ```
